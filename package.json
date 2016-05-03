@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/bredele/attrs/issues"
   },
-  "homepage": "https://github.com/bredele/attrs#readme"
+  "homepage": "https://github.com/bredele/attrs#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "tape": "^4.5.1",
+    "tape-run": "^2.1.3"
+  }
 }
