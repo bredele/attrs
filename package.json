@@ -1,0 +1,24 @@
+{
+  "name": "attrs",
+  "version": "1.0.0",
+  "description": "object to dom attributes",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify test/*js | tape-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/attrs.git"
+  },
+  "keywords": [
+    "dom",
+    "attributes",
+    "attribute"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/attrs/issues"
+  },
+  "homepage": "https://github.com/bredele/attrs#readme"
+}
