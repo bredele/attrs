@@ -4,6 +4,14 @@
 
 var styles = require('stylon');
 
+/**
+ * Set object as dom attriutes.
+ *
+ * @param {Element} el
+ * @param {Object} attrs
+ * @api public
+ */
+
 module.exports = function(el, attrs) {
   for(var key in attrs) {
     var value = attrs[key];
