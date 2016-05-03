@@ -38,3 +38,12 @@ tape('set object as style attribute', function(assert) {
   });
   assert.equal(btn.outerHTML, '<button style="top:100px;bottom:200px;"></button>');
 });
+
+tape('set array as attribute', function(assert) {
+  assert.plan(1);
+  var btn = document.createElement('button');
+  attrs(btn, {
+    class: ['hello', 'world']
+  });
+  assert.equal(btn.outerHTML, '<button class="hello world"></button>');
+});
