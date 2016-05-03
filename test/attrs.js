@@ -24,5 +24,17 @@ tape('set function as attribute', function(assert) {
       return bool ? 'hello' : 'world';
     }
   });
-  assert.equal(btn.outerHTML, '<button class="world"></button>');  
+  assert.equal(btn.outerHTML, '<button class="world"></button>');
+});
+
+tape('set object as style attribute', function(assert) {
+  assert.plan(1);
+  var btn = document.createElement('button');
+  attrs(btn, {
+    style: {
+      top: 100 + 'px',
+      bottom: 200 + 'px'
+    }
+  });
+  assert.equal(btn.outerHTML, '<button style="top:100px;bottom:200px;"></button>');
 });
